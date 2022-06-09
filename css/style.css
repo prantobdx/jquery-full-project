@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-image
+{
+    background-image: url("../img/background-2.jpg");
+    height: 550px; 
+    width: 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bg-opacity
+{
+    height: 550px; 
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.logo
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nav-link 
+{
+    color: white !important;
+    font-size: 1.4rem;
+    font-weight: 380;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.title
+{
+    margin-top: 13rem;
+    text-align: center;
+    color: white;
+    font-size: 1.6 rem;  
+}
+
+.icon
+{
+    color: blue;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    font-weight: 600;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+.card
+{
+    box-shadow: 3px 4px 10px black;
+    height: 350px;
+    width: 100%;
+    padding: 15px;
+}
+
+.heading{
+    text-align: center;
+    color: blue;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.text
+{
+    color: gray;
+    text-align:justify ;
+    padding: 12px;
+}
