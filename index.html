@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jquery Full project</title>
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--typed js start here-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js" ></script>
+    <!--typed js ends here-->
+    <!--barchart start-->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!--barchart ends-->
+
+    <!--Counter js plugins for jquery start-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <!--Counter js plugins for jquery -->
+    <!--OwlCarousel Slider Part start-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!--OwlCarousel Slider Part ends-->
+
 </head>
 
 <body>
@@ -15,12 +36,12 @@
 
   <!-- bg image section start-->
     <div class="bg-image">
-        <div class="bg-opacity">
+        <div class="bg-opacity ">
             <!--Navbar start -->
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="#"><img class="logo" src="img/download.png" ></a>
+            <nav class="navbar sticky-top scrolled navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/download.png" > </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon">      </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ml-auto">
@@ -40,8 +61,8 @@
                 </div>
               </nav>
             <!--Navrbar end-->
-            <div class="title">
-                <h1>Learn with Me</h1>
+            <div>
+                <h1 class="title"></h1>
             </div>
         </div>
     </div>
@@ -49,22 +70,22 @@
 
 
     <!-- service section start-->
-    <section>
+    
         <h1 class="text-center p-5">Our Services</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card mb-2">
                         <div class="logoCard text-center">
                             <i class="fa-solid fa-display icon"></i>
                         </div>
                         <hr>
                         <h1 class="heading">Web development</h1>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis harum tempora cupiditate, qui dolores ipsam distinctio explicabo saepe ducimus? </p>
+                        <p class="text">Lorem ipsum dolor sit ameet, consectetur adipisicing elit. Quis harum tempora cupiditate, qui dolores ipsam distinctio explicabo saepe ducimus? </p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card mb-2">
                         <div class="logoCard text-center">
                             <i class="fa-solid fa-display icon"></i>
                         </div>
@@ -85,14 +106,66 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- service section ends-->
+    
+    <!-- service section ends here-->
 
+    <!--last 10 year-->
+   
+    <h1 class="text-center bar-todo-head">last 10 years</h1>
+    <div class="row p-0 m-0 ">
+       <div class="col-md-8">
+       <h1 class="text-center">Barchart</h1>
+       <div id="barchartContainer" height:"300px" width:"100%"></div>
+      </div>
+     <div class="col-md-4 input-div">
+     <h2 class="text-center">Todo</h2>
+     <input type="text" placeholder="enter text" class="mb-2 form-control input" >
+     <button class="btn btn-primary text-white p-2">add me</button>
+     <ul id="todoUl"> 
+     </ul>
+     </div>
+   </div>
+    <!--last 10 year ends here-->
 
+    <!--Counter Part-->
+    <h1 class="text-center" style="margin-top:400px;"> Total achive </h1>
+    <div class="bg-black">
+   <div class="container">
+    <div class="row"> 
+      <div class="col-md-4">
+          <div class="client-title">
+            <span class="client-span">Total-client
+            </span>
+            <h1 class="count">400</h1>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="client-title">
+          <span class="client-span">Total-developer
+          </span>
+          <h1 class="count">200</h1>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="client-title">
+          <span class="client-span">Total-achive
+          </span>
+          <h1 class="count">100</h1>
+        </div>
+      </div>
+    </div>
+   </div>   
+   </div>
+<!--Counter Part-->
 
-    <script src="js/jquery-3.6.0.min.js"></script>
+<!--Carousel Slider Part start-->
+   
+
+<!--Carousel Slider Part ends-->
+
+        
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/my.js"></script>
     
 </body>
 </html>

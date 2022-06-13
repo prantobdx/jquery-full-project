@@ -1,6 +1,8 @@
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
 }
 
 .bg-image
@@ -31,18 +33,25 @@
 .nav-link 
 {
     color: white !important;
-    font-size: 1.4rem;
-    font-weight: 380;
+    font-size: 1.5rem;
+    font-weight: 350;
     text-transform: uppercase;
     margin-right: 20px;
 }
 
+.scrolled
+{
+    background: blue;
+    transition: background 1s;
+}
+
 .title
 {
+    
     margin-top: 13rem;
     text-align: center;
     color: white;
-    font-size: 1.6 rem;  
+    font-size: 1.4 rem;  
 }
 
 .icon
@@ -61,6 +70,7 @@
     height: 350px;
     width: 100%;
     padding: 15px;
+    
 }
 
 .heading{
@@ -75,4 +85,66 @@
     color: gray;
     text-align:justify ;
     padding: 12px;
+}
+
+.bar-todo-head
+{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+
+.fas 
+{
+    margin-left: 20px;
+    color: goldenrod;
+}
+
+.bg-black
+{
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../img/black-background 1.jpg");
+}
+
+
+.counter-row{
+
+    margin-top: 400px;
+}
+
+
+@media screen and (max-width:768px) {
+    .input-div{
+        top:420px;  
+    }
+}
+
+
+.client-title
+{
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.client-span
+{
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.count
+{
+    color:white;
+}
+
+@media screen and (max-width:760px) {
+    .client-title{
+       margin-top: 9px;
+    }
 }
